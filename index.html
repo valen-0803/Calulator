@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="CSS/Calculadora.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-image: url(IMG/mate.jpg);">
+        <div id="conatiner">
+            <div id="calculadora">
+                <div>
+                    <span class="form-control" id="resultado"></span>
+                </div>
+                <div id="teclado">
+                    <button class="numero" id="siete" onclick="numero(7)">7</button>
+                    <button class="numero" id="ocho" onclick="numero(8)">8</button>
+                    <button class="numero" id="nueve" onclick="numero(9)">9</button>
+                    <button class="operador" id="division" onclick="operador('/')">&#247;</button>
+                    <button class="numero" id="cuatro" onclick="numero(4)">4</button>
+                    <button class="numero" id="cinco" onclick="numero(5)">5</button>
+                    <button class="numero" id="seis" onclick="numero(6)">6</button>
+                    <button class="operador" id="multiplicacion" onclick="operador('*')">&times;</button>
+                    <button class="numero" id="uno" onclick="numero(1)">1</button>
+                    <button class="numero" id="dos" onclick="numero(2)">2</button>
+                    <button class="numero" id="tres" onclick="numero(3)">3</button>
+                    <button class="operador" id="resta" onclick="operador('-')">-</button>
+                    <button class="operador" id="limpiar" onclick="limpiar()">C</button>
+                    <button class="numero" id="cero" onclick="numero(0)">0</button>
+                    <button class="operador" id="igual" onclick="igual()">=</button>
+                    <button class="operador" id="suma" onclick="operador('+')">+</button>
+                </div>
+            </div>
+        </div>
+        <script src="JS/script.js"></script>
+        <footer class="pie">
+            <div>
+                <p>"El arte desafía a la tecnología y la tecnología inspira al arte" <br>JOHN LASSETER | BY: <span>Valentina Perez</span></p>
+            </div>
+        </footer>
+    </body>
+</html>
